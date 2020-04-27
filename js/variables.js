@@ -12,7 +12,7 @@
     const mokaSkraidyti = false;
     const manoPazymiai = []; // tuscias sarasas
     const marytesPazymiai = [10, 8, 2]; // ne tuscias sarasas
-    const abc = ['a', 'b', 'c', 'd', 'e','f'] // tekstas sarasas
+    const abc = ['a', 'b', 'c', 'd', 'e','f'] // tekstas sarasase
     
 
     console.log( vardas );
