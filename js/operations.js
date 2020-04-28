@@ -33,7 +33,6 @@ console.log(pilnasVardas);
 // Mano megstama spalva yra "juoda".
 
 const spalva = 'raudona';
-// const spalvosSakinys = 'Mano megstama spalva yra "juoda".';
 const spalvosSakinys = 'Mano megstama spalva yra "' + spalva + '".';
 
 console.log(spalvosSakinys);
@@ -65,6 +64,8 @@ console.log(abc);
 console.log( 'Pirmas pazymys:', pazymiai[0] );
 console.log( 'Antras pazymys:', pazymiai[1] );
 console.log( 'Trecias pazymys:', pazymiai[2] );
+console.log( 'Ketvirtas pazymys:', pazymiai[3] );
+console.log( 'Penktas pazymys:', pazymiai[4] );
 
 console.log('Pirma raide', abc [0]);
 console.log('Antra raide', abc [1]);
@@ -74,7 +75,7 @@ const pazymiuSuma = pazymiai[0]+ pazymiai[1] + pazymiai[2]+ pazymiai[3] + pazymi
 
 console.log('Pazymiu suma', pazymiuSuma);
 
-let abcSakinys = '';
+let abcSakinys = ' ';
 
 abcSakinys = abcSakinys + abc[0];
 abcSakinys = abcSakinys + abc[1];
@@ -82,8 +83,4 @@ abcSakinys = abcSakinys + abc[2];
 abcSakinys = abcSakinys + abc[3];
 abcSakinys = abcSakinys + abc[4];
 console.log('Visa ABC:', abcSakinys);
-
-
-
-
 
