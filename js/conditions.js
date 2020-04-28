@@ -95,3 +95,21 @@ switch ( akys ) {
         break;
         
  }
+
+ if ( akys === 'rudos' ) {
+    console.log('melagis');
+} else {
+    if ( akys === 'melyna' ) {
+        console.log('mldc');
+    } else {
+        if ( akys === 'raudonos' ) {
+            console.log('vampyras');
+        } else {
+            if ( akys === 'zalia' ) {
+                console.log('dar nevirtos');
+            } else {
+                console.log('a tu turi akis? 🤔');
+            }
+        }
+    }
+}
