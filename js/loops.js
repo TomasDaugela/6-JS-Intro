@@ -66,3 +66,30 @@ console.log('-----------------');
 for (let i=0; i<=11; i++) {
     console.log(i, "liekana", i % 3); 
 }
+
+//Loop YT
+console.log('----------Youtube------------');
+
+const names = ['Tomas','Joe','Bob','Dodo']
+
+for ( let i = 0; i<names.length; i++ ) {
+    console.log(names [i]);
+    if (i === 3) break;
+}
+
+console.log('-----------');
+
+
+for (name of names) {
+    console.log(name);
+    
+}
+
+console.log('---------------');
+
+let o = 0;
+while (o < 10) {
+    o++;
+    if (o === 5) continue;
+    console.log(o);
+}
