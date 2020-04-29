@@ -52,7 +52,7 @@ console.log('suma: ', suma);
 
 console.log('--------Atbulas tekstas--------');
 
-const tekstas = 'majonezas';
+const tekstas = 'Bangladesas';
 const tekstoIlgis = tekstas.length - 1;
 let atbulas = '';
 
@@ -93,3 +93,19 @@ while (o < 10) {
     if (o === 5) continue;
     console.log(o);
 }
+
+console.log('-----Dalyba be Liekanos------');
+
+const from = 1;
+const till = 900000;
+const divider = 3;
+let count = 0;
+
+for ( let i=from; i<=till; i++ ) {
+        if (i % divider === 0 ) {
+            count++;
+    }
+}
+const answer =`Skaiciu intervale tarp ${from} ir ${till}, besidalinanciu be liekanos is ${divider} yra ${count} vienetai.`;
+
+console.log(answer);
