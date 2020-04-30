@@ -108,3 +108,30 @@ console.log( skaitmenuKiekisSkaiciuje( -3.1415 ), '->', 5 );
 
 console.log('kas negerai su tokiu skaiciume??? 🤔🤔');
 console.log( skaitmenuKiekisSkaiciuje( 10000000000000000000000000000000000000000 ), '->', 31 );
+
+console.log('------------YT------------');
+
+// function go () {
+//     alert ('hi');
+//     alert ('hello');
+// }
+// go();
+
+//arguments
+//Dry Dont repeat yourself
+function go (name, age) {
+        if (age <= 20) {
+            return  name + "Maziau uz 20";
+        }else {
+            return name;
+        }
+    }
+    console.log( go('Tomas',19 ) );
+
+ function add (first, second) {
+        return first+second;
+    }
+    var sum = add (1,2);
+
+    console.log(go(sum));
+    
