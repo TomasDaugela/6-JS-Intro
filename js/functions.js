@@ -182,4 +182,86 @@ function go (name, age) {
     console.log(didziausiasSkaiciusSarase([55,69,Infinity,51,121]),'>',121);
     console.log(didziausiasSkaiciusSarase([Infinity,69,47,51,1201]),'>',1201);
     console.log(didziausiasSkaiciusSarase([Infinity. Infinity, Infinity]),'>','Error');
+
+    console.log('-------Isrinkti Raides------');
+
+function isrinktiRaides (text, step) {
+//validacija
+
+     // if (text.length === 0) {
+    if (text === '') {
+        return console.error('Error: tekstas negali buti tuscias');
+            
+    }
+    if ( typeof(text)!== 'string' ) {
+        return console.error('Error: pirma reiksme turi buti teksto tipo');
+    }
+    if (typeof(step) !=='number') {
+        return console.error('Error: antra reiksme turi buti normalus skaicius')
+    }
+    if (step ===0) {
+        return console.error('Error:zingnis negali buti nulinis');
+    }
+    if ( step > text.length){
+        return console.error('ErroR: zingnis negali buti didesnis uz turimo teksto ilgi');
+    }
+    if ( step % 1 !==0){
+        return console.error('ErroR: zingnis turi buti sveikasis');
+    }
+   
+//logika
+    let newWord = '';
+    for ( let i=step-1; i<text.length; i=i +step ){
+        
+            newWord = newWord + text[i];
+        }
+    return newWord;
+}
+console.log(isrinktiRaides(1561,2));
+console.log(isrinktiRaides('adc',0));
+console.log(isrinktiRaides('abc', 4));
+console.log(isrinktiRaides('',3));
+console.log(isrinktiRaides('abcdefghijkl',1.5),'>',"cfil");
+console.log(isrinktiRaides('abcdefghijkl',Infinity));
+console.log(isrinktiRaides('abcdefghijkl',NaN));
+
+console.log(isrinktiRaides('abcdefg',2),'>',"bdf");
+console.log(isrinktiRaides('abcdefghijkl',3),'>',"cfil");
+console.log(isrinktiRaides('abcdefghijkl',1),'>',"abcdefghijkl");
+
+
+// console.log(isrinktiRaides('abcdefghijkl',-3),'>',"jgda");
+
+console.log('---------DALYBA---------');
+
+function dalyba (a,b) {
+    if (!isFinite(a) ||
+       !isFinite(b) ){
+        return console.error('Error: duok normalius skaicius');
+        
+    }
+    if (b ===0) {
+        return console.error('Error: dalyba is 0 nepageidautina');
+        
+    }
+    return a / b;
+}
+console.log(dalyba(Infinity,4));
+console.log(dalyba(NaN,4));
+console.log(dalyba(21,0));
+console.log(dalyba(8,4));
+console.log(dalyba(21,2));
+
+
+
+//tas pats
+// isFinite(a) === false
+// !isFinite(a)
+
+//codewars.com
+
+
+
+
+    
     
