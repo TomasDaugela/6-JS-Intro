@@ -134,4 +134,52 @@ function go (name, age) {
     var sum = add (1,2);
 
     console.log(go(sum));
+
+    console.log('-----------Didziausiais Skaicius Sarace-------');
+
+
+    function didziausiasSkaiciusSarase(list) {
+        if ( Array.isArray(list)===false) {
+            return console.log('Error: turi buti array');
+
+        } if (list.length ===0) {
+            console.log('Error: array negali buti tuscias');      
+        }
+        //'biggest' maziausias, bet ne normalus skaicius
+        //einame per skaiciu  sarasa
+             //tikriname ar einamasis skaicius yra skaicius
+                 // jie ne:
+                      //einam prie sekancio saraso nario
+         //tikriname ar einamasis skaicius didesnis uz'Biggest'
+             //jei taip:
+                    //'biggest'= einamasis skaicius
+    // po visko patikrinam ar tai noramlus skaivius
+        
+        let biggest = -Infinity;
+        for ( let i=0; i<list.length; i++) {
+            const einamasisSkaicius = list[i];  
+            if (isFinite(einamasisSkaicius) === false) {
+                continue;
+                }
+            if (einamasisSkaicius > biggest) {
+                biggest = einamasisSkaicius;
+            }
+        }
+
+        if (biggest === -Infinity) {
+            return console.error('ERROR: Sarase turi but bent vienas tikras skaicius')
+        }
+
+        return biggest;
+    
+}
+
+    console.log(didziausiasSkaiciusSarase([1]),'>',1);
+    console.log(didziausiasSkaiciusSarase([1,2,3]),'>',3);
+    console.log(didziausiasSkaiciusSarase([1-5,78,14,0,18]),'>',18);
+    console.log(didziausiasSkaiciusSarase([55,69,47,51,121]),'>',121);
+    console.log(didziausiasSkaiciusSarase([55,69,555515,51,121]),'>',555515);
+    console.log(didziausiasSkaiciusSarase([55,69,Infinity,51,121]),'>',121);
+    console.log(didziausiasSkaiciusSarase([Infinity,69,47,51,1201]),'>',1201);
+    console.log(didziausiasSkaiciusSarase([Infinity. Infinity, Infinity]),'>','Error');
     
