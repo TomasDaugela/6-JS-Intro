@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Intro</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    Js intro content
-    -kintamieji
-    -if
-    -for
-    -funkcijos
-    - events
-    
+        <div>
+        Js intro content
+        -kintamieji
+        -if
+        -for
+        -funkcijos
+        - events
+    </div>
+    <form>
+        <label>Random Skaicius (3 = Super Malka)</label>
+        <input type="text" id="tb" name="tb" />
+        <input class = "btn" type="button" value="Kirsti medi" onclick="Random();" />
+        <label>malkos</label>
+        <input type="text" id="malkos" name="malkos" placeholder="malkos" />
+        <label>Super malkos</label>
+        <input type="text" id="superMalkos" name="superMalkos" placeholder="Super Malkos" />
+    </form>
+    <div class='shop'>
+        Pinigai
+        <input type="text" id="pinigai" name="pinigai" placeholder="pinigai" />
+        <div class="parduotuve">Parduotuve</div>
+        <div>
+            <label>Parduoti malkas 1=1eur</label>
+            <input class = "btn" type="button" value="Parduoti malkas" onclick="parduotiMalkas();" />
+        </div>
+        <div>
+            <label>Parduoti Super malkas 1=10eur</label>
+            <input class = "btn" type="button" value="Parduoti malkas" onclick="parduotiSuperMalkas();" />
+        </div>
+    </div>
+ 
+    <script src="./js/Malkos.js"></script>
     <script src="./js/functions.js"></script>
 </body>
 </html>
